@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`custom-button create snapshot 1`] = `
+<button
+  className="customButton    "
+  data-testid="submit-button"
+>
+  <span>
+    Hello
+  </span>
+</button>
+`;
+
+exports[`custom-button create snapshot with new class 1`] = `
+<button
+  className="customButton   yellowbtn "
+  data-testid="submit-button"
+>
+  <span>
+    Hello
+  </span>
+</button>
+`;
+
+exports[`custom-button snapshot 1`] = `
+<button
+  className="customButton    "
+  data-testid="submit-button"
+>
+  <span>
+    Hello
+  </span>
+</button>
+`;

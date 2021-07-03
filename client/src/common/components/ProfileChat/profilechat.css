@@ -1,0 +1,14 @@
+.messages_ws_container{
+    max-height: 600px;
+    overflow: auto;
+    
+}
+.messages_ws{
+    width: 98%;
+}
+.small_img_user{
+    border-radius: 10px;
+}
+.message{
+    margin: 5px;
+}
