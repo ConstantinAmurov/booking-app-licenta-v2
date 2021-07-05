@@ -141,7 +141,7 @@ const Register = (props) => {
               />
               <Field
                 component={FormInput}
-                label="yadima@gmail.com"
+                label="Your Email"
                 type="email"
                 name="email"
                 inputname="Email"
