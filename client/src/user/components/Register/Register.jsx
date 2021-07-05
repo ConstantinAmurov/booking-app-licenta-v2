@@ -97,7 +97,7 @@ const Register = (props) => {
           </button>
         )}
         clientId="686552901511-8eihl8qvqmaph31j4bvntoiv9nf4hpa3.apps.googleusercontent.com"
-        buttonText="LOGIN WITH GOOGLE"
+        buttonText="Login with Google"
         onSuccess={responseGoogle}
         onFailure={responseGoogle}
       />
