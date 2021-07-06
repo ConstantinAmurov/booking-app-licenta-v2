@@ -56,7 +56,7 @@ router.post("/register", async (req, res) => {
 
   try {
     const savedUser = await newUser.save();
-    const resetUrl = `https://localhost:3000/auth/confirmRegister/${confirmToken}`;
+    const resetUrl = `https://booking-app-licenta-v3.herokuapp.com/auth/confirmRegister/${confirmToken}`;
 
     const message = `
         <h1>You have requested a registration</h1>
