@@ -4,6 +4,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const app = express();
 const port = process.env.PORT || 5000;
+const path = require("path");
 
 app.use(cors());
 app.use(express.json());
@@ -35,9 +36,11 @@ const CompanyRouter = require("./routes/companies");
 app.use("/api/auth", authRouter);
 app.use("/api/companies", CompanyRouter);
 
-app.use(express.static("client/build"));
-app.get("*", (req, res) => {
-  res.sendFile("client/build");
+// Step 1:
+app.use(express.static(path.resolve(__dirname, "./client/build")));
+// Step 2:
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 });
 
 app.listen(port, () => {
