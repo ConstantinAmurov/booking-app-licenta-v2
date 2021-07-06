@@ -88,7 +88,6 @@ router.post("/register", async (req, res) => {
     });
   }
 });
-
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
@@ -281,7 +280,7 @@ router.post("/forgotpassword", async (req, res) => {
       .digest("hex");
     const savedUser = await findUser.save();
 
-    const resetUrl = `https://localhost:3000/auth/resetpassword/${resetToken}`;
+    const resetUrl = `https://booking-app-licenta-v3.herokuapp.com/auth/resetpassword/${resetToken}`;
 
     const message = `
         <h1>You have requested a new password reset</h1>
