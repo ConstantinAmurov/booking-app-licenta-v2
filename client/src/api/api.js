@@ -2,7 +2,7 @@ import axios from "axios";
 import { authToken } from "../common/helpers/token.helper";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5000/",
+  baseURL: "https://booking-app-licenta-v3.herokuapp.com/",
 });
 
 export const authAPI = {
