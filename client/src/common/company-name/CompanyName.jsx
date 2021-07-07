@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CompanyName = (props)=>{
+import logo from "./Logo.svg"
+
+const CompanyName = (props) => {
     return (
         <div className="companyName">
-                    <Link className="companyNameLink" to="/">
-                    <div className="company_symbol">
-                    B
-                    </div>
-                    Booking.app
+            <Link className="companyNameLink" to="/">
+                <img src={logo}></img>
             </Link>
-                </div>
+        </div>
     )
 }
 export default CompanyName

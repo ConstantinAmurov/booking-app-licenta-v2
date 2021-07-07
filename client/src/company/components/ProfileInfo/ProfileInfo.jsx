@@ -30,7 +30,7 @@ const ProfileInfo = (props) => {
                     :
 
                     <Row className="mt-1">
-                        <Col xs={5}>
+                        <Col xs={12} md={6} lg={4}>
                             <Card className="company_box" style={{ padding: "0" }}>
 
                                 <Card.Img variant="top" src={ProfileIMG} />
@@ -40,7 +40,7 @@ const ProfileInfo = (props) => {
 
                                         <div className="about_me_item_title">
                                             Full Name:
-                        </div>
+                                        </div>
                                         <div className="about_me_item_info" >
                                             {`${user.surname} ${user.name}`}
                                         </div>
@@ -51,7 +51,7 @@ const ProfileInfo = (props) => {
 
                                         <div className="about_me_item_title">
                                             Email:
-                        </div>
+                                        </div>
                                         <div className="about_me_item_info" >
                                             {user.email}
                                         </div>
@@ -62,11 +62,11 @@ const ProfileInfo = (props) => {
 
                                         <div className="about_me_item_title">
                                             Status:
-                        </div>
+                                        </div>
 
                                         <div className="about_me_item_info" >
                                             Admin
-                        </div>
+                                        </div>
 
                                     </div>
 
